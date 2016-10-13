@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+      <div [style.color]='wardsColor'>
+        Hello {{name}}
+      </div>
+			<input type="test" [value]="name" (blur)="name = $event.target.value">
+			
+			<input type="test" [(ngModel)]="name">
+			
+      <button (click)="changeSuitColor()">Change Suit Color</button>

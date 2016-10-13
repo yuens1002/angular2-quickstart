@@ -2,6 +2,18 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular App</h1>'
+    templateUrl: 'app/app.component.html'
 })
-export class AppComponent { }
+export class AppComponent { 
+  
+    // [ ] property binding, component to DOM
+    // ( ) event binding, Dom to component
+  
+    title = 'Customer App';
+    name = 'Ward';
+    wardsColor = 'blue';
+
+    changeSuitColor () {
+      this.wardsColor = this.wardsColor === 'blue' ? 'red' : 'blue';
+    }
+}
